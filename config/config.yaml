@@ -1,0 +1,34 @@
+# Config for GATK Pipeline
+
+# ---------------------------------------------------------------------------
+# Sample definitions
+# ---------------------------------------------------------------------------
+samples:
+  sample1:
+    r1: "data/fastq/sample1_R1.fastq.gz"
+    r2: "data/fastq/sample1_R2.fastq.gz"
+  # Add more samples below:
+  # sample2:
+  #   r1: "data/fastq/sample2_R1.fastq.gz"
+  #   r2: "data/fastq/sample2_R2.fastq.gz"
+
+# ---------------------------------------------------------------------------
+# Reference genome
+# ---------------------------------------------------------------------------
+reference:
+  fasta: "resources/reference/genome.fasta"
+  # known_sites is required for BQSR (e.g. dbSNP or Mills VCF)
+  known_sites: "resources/reference/dbsnp.vcf.gz"
+
+# ---------------------------------------------------------------------------
+# Thread allocation per tool
+# ---------------------------------------------------------------------------
+threads:
+  bwa: 8
+  gatk: 4
+
+# ---------------------------------------------------------------------------
+# Java heap settings
+# ---------------------------------------------------------------------------
+params:
+  gatk_mem: "4g"

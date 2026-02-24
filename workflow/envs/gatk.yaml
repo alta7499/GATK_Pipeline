@@ -1,0 +1,8 @@
+# Conda Environment: GATK4
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - gatk4=4.5.0.0
+  - samtools=1.19

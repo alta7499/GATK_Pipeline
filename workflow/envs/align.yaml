@@ -1,0 +1,8 @@
+# Conda Environment: Alignment
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - bwa-mem2=2.2.1
+  - samtools=1.19
