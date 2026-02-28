@@ -1,0 +1,10 @@
+name: gatk-snakemake
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - snakemake=8.10.8
+  - snakemake-executor-plugin-slurm
+  - pandas=2.2.1
+  - mamba
